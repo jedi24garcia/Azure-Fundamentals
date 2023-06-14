@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<title>Azure</title>
+<style>
+table, th, td {
+	border:1px solid black;
+}
+</style>
+<body style="background-color:FFFFFF;">
+
+<h1><u>AZURE FUNDAMENTAL COURSE</u></h1> 
+
+<h1>What is Cloud Computing?</h1>
+<p>Cloud Computing is the delivery of computing services including servers, storage, databases, networking, software
+analytics and intelligence.</p>
+<h1>Shared Responsibility Model</h1>
+<p>SaaS, PaaS, IaaS, On-prem. Also please refer to <a href="https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility">
+Shared Responsibility Model from Microsoft Website.</a></p>
+<table style="width:100%">
+  <tr>
+    <th>SaaS</th>
+    <th>PaaS</th>
+    <th>IaaS</th>
+    <th>On-Prem(ises)</th>
+  </tr>
+  <tr>
+    <td><strong>Responsibility always retained by the customer</strong></td>
+    <td><strong>Responsibility varies by type</strong></td>
+    <td><strong>Responsibility transfers to cloud provider</strong></td>
+  </tr>
+  <tr>
+    <td>Information and data</td>
+    <td>Devices (Mobile and PC)</td>
+    <td>Identity and Directory Infrastructure</td>
+    <td>Applications</td>
+    <td>Network Controls</td>
+    <td>Operating System</td>
+    <td>Physical Hosts</td>
+    <td>Physical Network</td>
+    <td>Physical Datacenter</td>  
+  </tr>
+</table>
+<table style="width:100%">
+  <tr>
+    <th>You'll always be responsible for:</th>
+  </tr>
+  <tr>
+    <td>The information and data stored in the cloud.</td>
+    <td>Devices that are allowed to connect to your cloud (cell phones, computers, and so on).</td>
+    <td>The accounts and identities of the people, services, and devices within your organization.</td>
+  </tr>
+  <tr>
+    <th>The cloud provider is always responsible for:</th>
+  </tr>
+  <tr>
+    <td>The physical datacenter</td>
+    <td>The physical network</td>
+    <td>The physical hosts</td>
+  </tr>
+  <tr>
+    <th>Your service model will determine responsibility for things like:</th>
+  </tr>
+  <tr>
+    <td>Operating Systems</td>
+    <td>Network Controls</td>
+    <td>Applications</td>
+    <td>Identity and Infrastructure</td>
+  </tr>
+</table>
+
+<h1>Private Cloud</h1>
+<p>Organizations create a cloud environment in their datacenter.
+<br>Organizations is responsible for operating the services they provide.</p>
+
+<h1><strong>Public Cloud</strong></h1>
+<p>Owned by cloud services or hosting provider.
+<br>Provides resources and services to multiple organizations and users.
+<br>Accessed via secure network connection(typically over the internet).</p>
+
+<h1><strong>Hybrid Cloud</strong></h1>
+<p>Combines Public and Private clouds to allow applications to run in the most appropriate location.</p>
+
+<h1><strong>Cloud Model Comparison</strong></h1>
+<p><strong>Private, Public, Hybrid</strong></p>
+
+<h1>Compare CapEx(Capital Expenditure) vs OpEx(Operational Expenditure)</h1>
+<p>Capital expenditures (CapEx) are purchases of significant goods or 
+services that will be used to improve a company’s performance in the future. 
+They include the cost of fixed assets and the acquisition of intangible assets 
+such as patents and other forms of technology. Operating expenses are the costs 
+that a company incurs for running its day-to-day operations. As such, they don't 
+apply to any costs related to the production of goods and services. These expenses 
+must be ordinary and customary costs for the industry in which the company operates.</p>
+<p><a href="https://www.investopedia.com/ask/answers/112814/whats-difference-between-capital-expenditures-capex-and-operational-expenditures-opex.asp#:~:text=Capital%20expenditures%20are%20a%20company's,%2C%20utilities%2C%20and%20property%20taxes">For More infor about CapEx and OpEx</a></p>
+
+<h1>Cosumption-Based Model</h1>
+<p>Cloud services providers operate on a consumption-based model, which means that end users only pay for the resources that they
+use. Whatever they use is what they pay for.
+> <strong>Better cost prediction.</strong>
+> <strong>Prices for individual resources and services are provided.</strong>
+> <strong>Billing is based on actual usage.</strong>
+</p>
+
+<h1>Cloud Benefits</h1>
+<p><strong>High Availability, Elasticity, Scabality, Reliability, Predictability, Security, Governance, Manageability</strong></p>
+
+<h1>Infrastructure as a Service<strong>(IaaS)</strong></h1>
+<p>Infrastructure as a service (IaaS) is the most flexible category of cloud services, 
+as it provides you the maximum amount of control for your cloud resources. In an IaaS model, 
+the cloud provider is responsible for maintaining the hardware, network connectivity (to the internet), 
+and physical security.</p>
+
+<h1>Platfrom as a Service<strong>(PaaS)</strong></h1>
+<p>Provides environment for building, testing, and deployment software applications without focusing on
+managing underlying infrastructure.</p>
+
+<h1>Sortware as a Service<strong>(SaaS)</strong></h1>
+<p>Software as a service (SaaS) is the most complete cloud service model from 
+a product perspective. With SaaS, you’re essentially renting or using a fully 
+developed application. Email, financial software, messaging applications, and connectivity 
+software are all common examples of a SaaS implementation.</p>
+
+<h1>Azure Accounts</h1>
+<p>Azure Account, Azure free account, Azure free student account, Microsoft Learn Sandbox</p>
+
+<h1>Regions</h1>
+<p>1. Regions are made up of one or more datacenters in close proximity.
+<br>2. Provide flexibility and scale to reduce customer legacy.
+<br>3. Preserve data residency with a comprehensive compliance offering.</p>
+
+<h1>Availability Zones</h1>
+<p>Availability zones are physically separate datacenters within an Azure region. 
+<br>Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. 
+<br>An availability zone is set up to be an isolation boundary. 
+<br>If one zone goes down, the other continues working. 
+<br>Availability zones are connected through high-speed, private fiber-optic networks.</p>
+
+<h1>Azure Sovereign Regions (US Government Services)</h1>
+<h1>Azure Sovereign Regions (Azure China)</h1>
+
+<h1>Azure Resources</h1>
+<p><strong>Azure Resources</strong> are components like storage, virtual machines, and networks that are available to build cloud solutions.</p>
+<table style="width:100%">
+  <tr>
+    <th>Virtual Machines</th>
+    <th>Storage Accounts</th>
+    <th>Virtual Networks</th>
+    <th>Application Services</th>
+    <th>SQL Databases</th>
+    <th>Functions</th>
+  </tr>
+</table>  
+
+<h1>Resource Groups</h1>
+<p>A Resource Group is a container to manage and aggregate resources in a single unit.
+<br>1. Resources can exist in only one resource group.
+<br>2. Resources can exist in different regions.
+<br>3. Resources can be moved to different resource groups.
+<br>4. Applications can utilize multiple resource groups.
+</p>
+
+<h1>Azure Subcriptions</h1>
+<p>Provides you with authenticated and authorized access to Azure accounts.
+<br><strong>Billing Boundary</strong>: Generate seperate billing reports and invoices for each subcriptions.
+<br><strong>Access Control Boundary</strong>: Azure will apply access-management policies at the subscription level, 
+and you can create separate subscriptions to reflect different organizational structures. An example is that within a business, 
+you have different departments to which you apply distinct Azure subscription policies. This allows you to manage and control 
+access to the resources that users provision with specific subscriptions.</p>
+
+<h1>Management Groups</h1>
+<a href="https://learn.microsoft.com/en-gb/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure">Follow link and read</a>
+
+<h1>Compute and Networking- Objective Domain</h1>
+
+<h1>Azure Compute Services</h1>
+<p> is an on-demand computing service that provides computing resources such as disks, processors, memory, networking and OS.</p>
+<table style="width:100%">
+  <tr>
+    <th>Virtual Machines</th>
+    <th>App Services</th>
+    <th>Container Instances</th>
+    <th>Azure Kubernetes Services(AKS)</th>
+    <th>Azure Virtual Desktop</th>
+  </tr>
+</table>  
+
+<h1>Azure Virtual Machines</h1>
+<p>Are software emulations of Physical Computers.
+<br>1. Includes virtual processor, memory, storage and networking.
+<br>2. IaaS offering that provides total control and customization.</p>
+
+<h1>VM Scale sets</h1>
+<p>Scale sets provide a load-balanced opportunity to automatically scale resources.
+<br>1. Scale out when resource needs increase.
+<br>2. Scale in when resource needs are lower.
+</p>
+
+<h1>VM Availability sets -> <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview">Link</a></h1>
+
+<h1>Azure Virtual Desktop</h1>
+<p> Azure Virtual Desktop is a desktop and app virtualization that runs in the cloud.
+<br>1. Create a full desktop virtualiztion environment without having to run additional gateway servers.
+<br>2. Reduce risk of resource being left behind.
+<br>3. 
+</p>
+
+<h1>Azure Container Services</h1>
+<p>Azure Container Services are a light-weight, virtualized environment that does not require OS management, and can respond to changes on demand.
+<br>1. Azure Container Instances
+<br>2. Azure Kurbenetes Services
+</p>
+
+<h1>Azure Functions</h1>
+<p>Event base code running your service and not the underlying infrastructure.</p>
+
+<h1>Comparing Azure Compute Options</h1>
+<p>Put link here</p>
+
+<h1>Azure App Services</h1>
+<p>Azure App Services is a fully managed platform to build, deploy, and scale web apps and API's quickly.</p>
+
+<h1>Azure Networking Services</h1>
+<p>Azure Virtual Network enables Azure resources to communicate with each other, the internet an on-premises networks.</p>
+
+<h1>VPN (Azure related) = google it</h1>
+
+<h1>Azure Express Route</h1>
+<p>Extends on-premises networks into Azure over a private connection that is facilitated by a connectivity provider.</p>
+
+<h1>Azure DNS</h1>
+<p>1. Reliability and performance by leveraging a global network of DNS name servers using Anycast Networking. 
+<br>2. Security is based on Azure resource manager, enabling role-based access control and monitoring and logging.
+<br>3. And more.</p>
+
+<h1>Storage Accounts</h1>
+<p>1. Must have a globally unique name.
+<br>2. Provide over-the-internet access worldwide.
+<br>3. Determine storage services and redundancy options.</p>
+
+<h1>Storage Redundancy <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy">Please refer here</a></h1>
+
+<h1>Azure Storage Services</h1>
+<p>1. <strong>Containter Storage (blob)</strong> is optimized for storing massive amounts of unstructured data, such as text or binary data.
+<br>2. <strong>Disk Storage</strong> provides disks for VM, applications, and other services to access and use.
+<br>3. <strong>Azure Files</strong> sets up highly available network file shares that can be acccessed by using the standard Server Message Block Protocol.
+</p>
+
+<h1>Storage Service Public Endpoints</h1>
+<p>Google it</p>
+
+<h1>Azure Storage Access Tiers</h1>
+<p>Hot, Cool, Archive (google for more info)</p>
+
+<h1>Azure Migrate</h1>
+<p>1. Unified migration platform
+<br>2. Range of integrated and standalone tools
+<br>3. Assessment and migration
+</p>
+
+<h1>Azure Data Box</h1>
+<p>1. Store up to 80 TB of data.
+<br>2. Move you disaster recovery backups to Azure.
+<br>3. Protect your data in a rugged case during transit.
+<br>4. Migrate data out of Azure for compliance or regulatory needs.
+<br>5. Migrate data to Azure from remote locations with limited or no connectivity.
+</p>
+
+<h1>File Management Options</h1>
+<p>1. AzCopy - Command line Utility
+<br>2. Azure Storage Explorer - Graphical user interface(similar to Windows Explorer)
+<br>3. Azure File Sync - Synchronizes Azure and on premises files in a bidirectional manner
+</p>
+
+<h1>Identity, Access and Security</h1>
+<p>Describe the benefits and usage of:
+<br><strong>Samples:</strong> 
+<br>Describe the concept of Zero Trust
+<br>Describe Azure AD Conditional Access
+<br>Describe Azure Role Based Access Control
+<br>Describe the purpose of Microsoft Defender for Cloud
+<br>...... and more
+</p>
+
+<h1>Azure Active Directory</h1>
+<p>is Microsoft Azure's cloud-based identity and access management service.
+<br>1. Authentication (employees sign-in to access resourcess)
+<br>2. Single sign-on
+<br>3. Application management
+<br>...... and more
+</p>
+
+<h1>Azure active Directory Domain Services</h1>
+<p>Gain the benefit of cloud-based.</p>
+
+<h1>Compare Authentication and Authorization</h1>
+<p>1. <strong>Authentication</strong> identifies the person or service seeking access to a resource.
+<br>2. <strong>Authorization</strong> determines an authenticated person's or service's level of access.
+</p>
+
+<h1>Azure Multi-Factor Authentication</h1>
+<p>Provides additional security for your identities by requiring two or more elements for full authentication.
+<br><strong>Something you know</strong> <-> <strong>Something you possess</strong> <-> <strong>Something you are</strong>
+</p>
+
+<h1>External Identities B2B</h1>
+<p>B2B collaboration
+<br>Azure AD B2C
+</p>
+
+<h1>Conditional Access</h1>
+<p>Conditional Access is used by Azure Active Directory to bring signals together, to make decisions and enforce organizational policies.
+<br>1. User or Group membership
+<br>2. IP Location
+<br>3. Device
+<br>4. Application
+<br>5. Risk Detection
+</p>
+
+<h1>Azure role-based access control</h1>
+<p>1. Fine-grained access management
+<br>2. Enables access to the Azure portal and controlling access to resources.
+<br>3. Segregate duties within the team and grant only the amount of access to users that they need to perform their jobs.
+</p>
+
+<h1>Zero Trust</h1>
+<p1>Secure assets where they are with Zero Trust
+</p>
+
+<h1>Defense in depth</h1>
+<p>1. A layered approach to securing computer systems.
+<br>2. Provides multiple levels of protection.
+<br>3. Attacks againts one layer are isolated.
+</p>
+
+<h1>Microsoft Defender for Cloud</h1>
+<p><strong>Microsoft Defender</strong> for Cloud is a monitoring service that provides threat protection across both Azure and on-premises datacenters.
+<br>1. Provides security recommendations
+<br>2. Detect and block malware
+<br>3. Analyze and identify potential attacks
+</p>
+
+<h1>Cost Management</h1>
+<p>1. Resource type - so the usage that a meter tracks and the number of meters associated with a resource, depend on the resource type.
+<br>2. Consumption
+<br>3. Maintenance
+<br>4. Geography - same resource type can cost different amounts depending on the geographic area
+<br>5. Network Traffic 
+<br>6. Subscription
+</p>
+
+<h1>Azure Marketplace</h1>
+<p>Allows customer to find, try, purchase and provision application.
+<br>1. Open Source container platforms
+<br>2. Virtual 
+</p>
+
+<h1>Pricing Calculator</h1>
+<p>A tool that helps you estimate the cost of Azure products
+<br>1. Region
+<br>2. Tier
+<br>3. Billing options
+<br>4. Support options
+<br>5. Programs and offers
+<br>6. Azure devs
+</p>
+
+<h1>Total Cost of Ownership Calculator</h1>
+<p>1. A tool to estimate cost savings you can realize by migrating to Azure.
+<br>2. A report compares the costs of on-premises infractructures with the costs of using Azure products and services in the cloud.
+</p>
+
+<h1>Azure Cost Management</h1>
+<p>1. Reporting - billing reports
+<br>2. Data enrichment
+<br>3. Budgets - set spend budget
+<br>4. Alerting - when cost exceed limits
+<br>5. Recommendation - cost recommendations
+</p>
+
+<h1>Tags</h1>
+<p>1. Provides metadata for your Azure resources.
+<br>2. Logically organizes resources into a taxonomy.
+<br>3. Consists of a name-value pair.
+<br>4. Very useful for rolling up billing information
+</p>
+
+<h1>Governance and Compliance</h1>
+<h4>Azure Policy</h4>
+<p>Helps to enforce organizational standards.
+<br>1. Evaluates and identifies Azure resources that do not comply with your policies.
+<br>2. Provides built-in policy and initiative definitions.
+</p>
+
+<h4>Azure Blueprints</h4>
+<p>Makes it possible for development teams to rapidly build and stand up new environments.
+<br>1. Role Assignments
+<br>2. Policy Assignments
+<br>3. Azure Resource Manager Templates
+<br>4. Resource Groups
+</p>
+
+<h4>Resource Locks</h4>
+<p>Protect your Azure resources from accidental deletion or modification
+<br>Manage locks at subscription, resource group, or individual resource levels within Azure Portal.
+</p>
+
+<h1>Management and Deployment tools</h1>
+<h4>Tools for interacting with Azure</h4>
+<p>
+<br>Azure Portal
+<br>Azure Powershell
+<br>Azure Cloud Shell
+<br>Command-Line Interface
+</p>
+
+<h1>Azure Arc</h1>
+<p>Azure Arc is a bridge that extends the Azure platform to help you build applications 
+and services with the flexibility to run across datacenters, at the edge, and in multicloud environments</p>
+
+<h1>Azure Resource Manager</h1>
+<p>Provides a management layer that enables you to create, update, and delete resources in you Azure sub.</p>
+
+<h1>Azure Resource Manager Template</h1>
+<p>Templates are JSON files that can be used to create and 
+deploy Azure Infrastructures without having to write programming commands.
+<br>
+</p>
+
+<h1>Azure Monitoring Tools</h1>
+<p>Azure Advisor - Analyzes deployed Azure resources and makes recommendations based on best
+practices to optimize Azure Deployments.
+<br>1. Reliability
+<br>2. Security
+<br>3. Performance
+<br>4. Cost
+<br>5. Operational Excellence
+</p>
+
+<h1>Azure Service Health</h1>
+<p>1. Azure Status - global view of the health of all Azure services 
+<br>2. Service Health - focused view on only the services
+<br>3. Resource Health
+</p>
+
+<h1>Azure Monitor</h1>
+<p>Maximizes the availability and performance of applications.
+<br>1. Application Insights
+<br>2. Log Analytics
+<br>3. Smart Alerts
+<br>4. Automation Actions
+<br>5. Customized Dashboards
+</p>
+
+</body>
+</html>
